@@ -90,7 +90,7 @@ footer {
     color: black;
     margin-top: 43%;
     position: sticky;
-    top: 100vh;
+    top: 10vh;
 }
 .git {
     position: absolute;
