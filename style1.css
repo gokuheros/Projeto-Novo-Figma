@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 60px;
+}
+
+.sobremim-conteudo h3{
+    color: #22d4fd;
+    text-decoration: none;
+    font-weight: normal;
+    font-family: "Montserrat";
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    margin-left: 300px;
+}
+
+.sobremim-conteudo p{
+    color: #ccc;
+    margin-top: 20px;
+    font-size: 13px;
+    margin-left: 90px;
+    line-height: 10px;
+    word-break: break-all;
+}

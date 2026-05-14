@@ -57,6 +57,7 @@ nav a {
     margin-top: 20px;
 }
 
+
 .redes h2 {
     margin-bottom: 15px;
     margin-top: 40px;
@@ -94,19 +95,19 @@ footer {
 }
 .git {
     position: absolute;
-    top: 65%;
+    top: 63%;
     right: 60%;
     width: 35px;
 }
 .linkd {
     position: absolute;
-    top: 78%;
+    top: 76.5%;
     right: 62%;
     width: 25px;
 }
 .insta {
     position: absolute;
-    top: 90%;
+    top: 89%;
     right: 62%;
     width: 30px;
 }
@@ -120,7 +121,7 @@ footer {
     border-radius: 12px;
 
 }
-.Vinícius {
+.vinicius {
     position: absolute;
     width: 20%;
     height: 38%;
