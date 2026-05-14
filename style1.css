@@ -5,22 +5,28 @@
     padding: 40px 60px;
 }
 
+.sobremim-conteudo{
+    flex-direction: column;
+    display: flex;
+    margin-top: 150px;
+    margin-left: 325px;
+    gap: 20px;
+}
+
 .sobremim-conteudo h3{
+    display: flex;
     color: #22d4fd;
-    text-decoration: none;
     font-weight: normal;
     font-family: "Montserrat";
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-    margin-top: 150px;
-    margin-left: 300px;
 }
 
 .sobremim-conteudo p{
     color: #ccc;
     margin-top: 20px;
     font-size: 13px;
-    margin-left: 90px;
+    margin-left: 170px;
     line-height: 10px;
     word-break: break-all;
 }
