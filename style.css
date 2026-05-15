@@ -12,16 +12,17 @@ body {
 
 header {
     padding: 20px 60px;
-    position: absolute;
-    top: 50px;
-    left: 17%;
+    position: relative;
+    top: 100px;
+    margin-left: 325px;
+    font-size: 20px;
 }
 
 nav a {
     color: #22d4fd;
     margin-right: 30px;
     text-decoration: none;
-    font-weight: normal;
+    font-weight: 500;
     font-family: "Montserrat";
 }
 
@@ -123,9 +124,16 @@ footer {
 }
 .vinicius {
     position: absolute;
-    width: 20%;
-    height: 38%;
+    width: 25%;
+    height: 49%;
     left: 55%;
-    top: 30%;
+    top: 25%;
     border-radius: 10px;
+}
+
+.foto{
+    position: relative;
+    right: 20%;
+    bottom: 100px;
+
 }

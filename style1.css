@@ -18,8 +18,8 @@
 
 .sobremim-conteudo h3{
     display: flex;
-    color: #22d4fd;
-    font-weight: normal;
+    color: white;
+    font-weight: 400;
     font-family: "Montserrat";
     justify-content: left;
     align-items: center;
@@ -30,9 +30,9 @@
     color: #ccc;
     margin-top: 20px;
     font-size: 20px;
-    margin-left: 10px;
+    margin-left: 2px;
     line-height: 1.5;
     word-break: break-all;
-    max-width: 505px;
-    font-family: "Geologica", sans-serif;
+    max-width: 490px;
+    font-family: "Montserrat", sans-serif;
 }
