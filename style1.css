@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV@100..900,0&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 .container {
     display: flex;
     justify-content: space-between;
@@ -20,15 +23,16 @@
     font-family: "Montserrat";
     justify-content: left;
     align-items: center;
+    font-size: 25px;
 }
 
 .sobremim-conteudo p{
     color: #ccc;
     margin-top: 20px;
-    font-size: 19px;
+    font-size: 20px;
     margin-left: 50px;
     line-height: 1.5;
     word-break: break-all;
-    max-width: 499px;
-    font-family: "Krono One";;
+    max-width: 508px;
+    font-family: "Geologica", sans-serif;
 }
