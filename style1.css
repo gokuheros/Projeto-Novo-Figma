@@ -1,38 +1,56 @@
-@import url('https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV@100..900,0&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;500;600&display=swap');
 
-
-.container {
+.sobremim-conteudo {
+    max-width: 620px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px 60px;
-}
-
-.sobremim-conteudo{
     flex-direction: column;
-    display: flex;
-    margin-top: 150px;
-    margin-left: 325px;
-    gap: 20px;
+    gap: 28px;
 }
 
-.sobremim-conteudo h3{
-    display: flex;
-    color: white;
+.sobremim-conteudo h3 {
+    color: #f6f6f6;
+    font-family: "Krona One", sans-serif;
     font-weight: 400;
-    font-family: "Montserrat";
-    justify-content: left;
-    align-items: center;
-    font-size: 25px;
+    font-size: 2rem;
+    line-height: 1.4;
 }
 
-.sobremim-conteudo p{
-    color: #ccc;
-    margin-top: 20px;
-    font-size: 20px;
-    margin-left: 2px;
-    line-height: 1.5;
-    word-break: break-all;
-    max-width: 490px;
+.sobremim-conteudo div {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.sobremim-conteudo p {
+    color: #f6f6f6;
+    font-size: 1.15rem;
+    line-height: 1.65;
+    max-width: 620px;
     font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 900px) {
+    .sobremim-conteudo {
+        max-width: 100%;
+        text-align: left;
+    }
+
+    .sobremim-conteudo h3 {
+        text-align: center;
+        font-size: 1.7rem;
+    }
+
+    .sobremim-conteudo p {
+        font-size: 1rem;
+    }
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 22px 10px;
+    background: #22d4fd;
+    color: #000;
+    font-size: 1.1rem;
+    font-weight: 500;
 }

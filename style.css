@@ -5,46 +5,58 @@
 }
 
 body {
-    background-color: black;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    background-color: #000;
+    color: #f6f6f6;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
-    padding: 20px 60px;
-    position: relative;
-    top: 100px;
-    margin-left: 325px;
-    font-size: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 40px 0;
+}
+
+nav {
+    display: flex;
+    gap: 80px;
 }
 
 nav a {
     color: #22d4fd;
-    margin-right: 30px;
     text-decoration: none;
-    font-weight: 500;
-    font-family: "Montserrat";
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
 }
 
 .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 40px 80px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 40px 60px;
+    justify-content: space-between;
+    gap: 80px;
+    flex: 1;
 }
 
 .conteudo {
-    max-width: 500px;
-    position: absolute;
-    left: 20%;
-    top: 25%;
+    max-width: 620px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 
 .conteudo h1 {
-    font-size: 25px;
+    font-size: 2.25rem;
     font-weight: 400;
-    line-height: 1.4;
-    font-family: "Krona One";
+    line-height: 1.45;
+    font-family: "Krona One", sans-serif;
 }
 
 .conteudo span {
@@ -52,88 +64,116 @@ nav a {
 }
 
 .conteudo p {
-    margin: 20px 0;
-    color: #ccc;
-    line-height: 1.5;
-    margin-top: 20px;
+    color: #f6f6f6;
+    font-size: 1.2rem;
+    line-height: 1.6;
 }
 
+.redes {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
 
 .redes h2 {
-    margin-bottom: 15px;
-    margin-top: 40px;
-    margin-left: 15%;
-    font-size: 17px;
-    font-family: "Krona One";
+    font-size: 1.5rem;
+    font-family: "Krona One", sans-serif;
     font-weight: 400;
+    text-align: center;
 }
 
 .botao {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    width: 100%;
+    max-width: 378px;
     border: 2px solid #22d4fd;
-    color: white;
+    color: #f6f6f6;
     text-decoration: none;
-    padding: 15px;
-    margin-bottom: 10px;
-    text-align: center;
-    border-radius: 10px;
-    transition: 0.3s;
+    padding: 17px 20px;
+    border-radius: 8px;
+    font-size: 1.35rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
 }
 
 .botao:hover {
     background: #256b7b;
-    color: black;
+    color: #000;
+    transform: translateY(-2px);
+}
+
+.icone {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.imagem {
+    width: min(45vw, 430px);
+}
+
+.vinicius,
+.foto {
+    width: 100%;
+    max-width: 430px;
+    border-radius: 16px;
+    display: block;
 }
 
 footer {
+    margin-top: auto;
     text-align: center;
-    padding: 10px;
-    background: linear-gradient(to right, #22d4fd, #0ff);
-    color: black;
-    margin-top: 43%;
-    position: sticky;
-    top: 100vh;
-}
-.git {
-    position: absolute;
-    top: 63%;
-    right: 60%;
-    width: 35px;
-}
-.linkd {
-    position: absolute;
-    top: 76.5%;
-    right: 62%;
-    width: 25px;
-}
-.insta {
-    position: absolute;
-    top: 89%;
-    right: 62%;
-    width: 30px;
-}
-.perfil{
-    position: absolute;
-    width: 345px;
-    height: 310px;
-    left: 950px;
-    top: 225px;
-    border: 2px solid #22d4fd;
-    border-radius: 12px;
-
-}
-.vinicius {
-    position: absolute;
-    width: 25%;
-    height: 49%;
-    left: 55%;
-    top: 25%;
-    border-radius: 10px;
+    padding: 22px 10px;
+    background: #22d4fd;
+    color: #000;
+    font-size: 1.1rem;
+    font-weight: 500;
 }
 
-.foto{
-    position: relative;
-    right: 20%;
-    bottom: 100px;
+@media (max-width: 900px) {
+    header {
+        padding: 40px 24px 0;
+    }
 
+    nav {
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .container {
+        padding: 32px 24px 64px;
+        flex-direction: column-reverse;
+        gap: 32px;
+        text-align: center;
+    }
+
+    .conteudo {
+        max-width: 100%;
+        align-items: center;
+    }
+
+    .conteudo h1 {
+        font-size: 1.8rem;
+    }
+
+    .conteudo p {
+        font-size: 1.05rem;
+    }
+
+    .redes {
+        width: 100%;
+        align-items: center;
+    }
+
+    .botao {
+        max-width: 100%;
+    }
+
+    .imagem {
+        width: min(90vw, 380px);
+    }
 }
